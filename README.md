@@ -22,7 +22,8 @@ partially walks each directory, then sleeps.  Good for your directory cache.
     installing the nocache utility might help with the rsync problem though.
     samba dir trees aren't kept in the linux cache.  NFS dir trees are, though.
     
-    "this does not cache files, it ensures that the directories that contain file inodes are kept in cache."
+    "this does not cache files, it ensures that the directories that contain file 
+    inodes are kept in cache."
     
 ### No need to install anything, it's a standard linux script.    
 Just download and run. 
