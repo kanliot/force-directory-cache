@@ -24,3 +24,4 @@ partially walks each directory, then sleeps.  Good for your directory cache.
     
     "this does not cache files, it ensures that the directories that contain file inodes are kept in cache."
     
+# No need to install anything, it's a standard linux script.  Just download and run. 
