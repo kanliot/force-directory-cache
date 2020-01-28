@@ -11,7 +11,7 @@ partially walks each directory, then sleeps.  Good for your directory cache.
     
      -q, 	suppress startup message
      -c, 	set count of files to scan before going to sleep for 5s 
-    		defaults to $chunk scans
+    		defaults to 4000 scans
     
     
     This isn't great on CPU usage, but it's very good on memory, tends to use
