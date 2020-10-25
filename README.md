@@ -27,3 +27,9 @@ partially walks each directory, then sleeps.  Good for your directory cache.
     
 ### No need to install anything, it's a standard linux script.    
 Just download and run. 
+
+
+** note I am currently using a different version of this program.  I've found that this program reads the inode data of each file (like stat) but that's not even required... rather it's easier just to read each directory... which is different than reading the inode of each file in a directory.  
+
+** also `sudo bash -c 'echo 5 >/proc/sys/vm/vfs_cache_pressure'`   
+setting ..../vfs_cache_pressure to 1000 means the vfs cache is worth 10 times less than file data. setting it to 5, probably means it's worth 20 times more.
