@@ -38,4 +38,5 @@ one more thing.  how to prune directories from GNU `find` as to make it faster
 
     find $PATHNAME1 $PATHNAME2 -path ~/.local -prune -o -path ~/.sword -prune -o -true 
                ^spec path     ^operation                      ^required so rules can not always evaluate to false
+  You can see that `-path ~/.something -prune` is repeated twice, but `-o -true` must terminate the "rules" for GNU find. 
                
