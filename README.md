@@ -33,3 +33,8 @@ Just download and run.
 
 ** also `sudo bash -c 'echo 5 >/proc/sys/vm/vfs_cache_pressure'`   
 setting ..../vfs_cache_pressure to 1000 means the vfs cache is worth 10 times less than file data. setting it to 5, probably means it's worth 20 times more.
+
+one more thing.  how to prune directories from GNU `find` as to make it faster
+    find $PATH -path ~/.local -prune -o -path ~/.sword -prune -o -true 
+               ^spec path     ^operation                      ^required so rules can not always evaluate to false
+               
